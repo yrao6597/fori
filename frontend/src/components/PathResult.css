@@ -1,0 +1,54 @@
+.path-result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  width: 100%;
+  max-width: 90vw;
+  padding: 0 24px 64px;
+  box-sizing: border-box;
+}
+
+.path-result__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.path-result__title {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.4rem;
+  font-weight: normal;
+  color: #2C2825;
+  margin: 0;
+}
+
+.path-result__summary {
+  font-size: 0.9rem;
+  color: #6B6560;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.path-result__duration {
+  font-size: 0.75rem;
+  color: #A09890;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.path-result__nodes {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  overflow-x: auto;
+  padding-bottom: 16px;
+}
+
+.path-result__nodes .path-node {
+  min-width: 260px;
+  max-width: 260px;
+  flex-shrink: 0;
+}

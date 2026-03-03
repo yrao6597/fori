@@ -1,0 +1,145 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  gap: 48px;
+}
+
+/* Result screen: align to top so nodes are scrollable */
+.page--top {
+  justify-content: flex-start;
+  padding-top: 48px;
+}
+
+.logo {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.1rem;
+  font-weight: normal;
+  letter-spacing: 0.08em;
+  color: #6B6560;
+  margin: 0;
+}
+
+/* --- Goal screen --- */
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 560px;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
+.goal-input {
+  width: 100%;
+  padding: 20px 24px;
+  font-size: 1.125rem;
+  font-family: Georgia, 'Times New Roman', serif;
+  color: #2C2825;
+  background: #FFFFFF;
+  border: 1.5px solid #E0DBD4;
+  border-radius: 12px;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+
+.goal-input::placeholder {
+  color: #B5AFA8;
+}
+
+.goal-input:focus {
+  border-color: #C4622D;
+}
+
+.submit-btn {
+  padding: 16px 36px;
+  font-size: 1rem;
+  font-family: system-ui, sans-serif;
+  font-weight: 500;
+  color: #FFFFFF;
+  background-color: #C4622D;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s, opacity 0.2s;
+}
+
+.submit-btn:hover:not(:disabled) {
+  background-color: #AE5427;
+}
+
+.submit-btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+/* --- Questions screen --- */
+
+.question-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+  max-width: 480px;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
+.question-progress {
+  font-size: 0.8rem;
+  color: #B5AFA8;
+  letter-spacing: 0.05em;
+  margin: 0;
+}
+
+.question-text {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.35rem;
+  font-weight: normal;
+  color: #2C2825;
+  text-align: center;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.options-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.option-btn {
+  width: 100%;
+  padding: 16px 20px;
+  font-size: 0.95rem;
+  font-family: system-ui, sans-serif;
+  color: #2C2825;
+  background: #FFFFFF;
+  border: 1.5px solid #E0DBD4;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: left;
+  transition: border-color 0.15s, background-color 0.15s;
+}
+
+.option-btn:hover {
+  border-color: #C4622D;
+  background-color: #FDF8F5;
+}
+
+/* --- Loading screen --- */
+
+.loading-text {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.1rem;
+  color: #6B6560;
+  margin: 0;
+}
